@@ -1,43 +1,16 @@
 import React from "react"; 
-import{
-    Nav, 
-    NavLink, 
-    Bars, 
-    NavMenu, 
-    NavBtn, 
-    NavBtnLink
-} from "./NavbarElements"; 
 
 const Navbar = () => {
 
     return(
-        <>
-            <Nav> 
-                <Bars />
-                <NavMenu> 
-                    <NavLink to="/bookings">
-                        Bookings
-                    </NavLink>
-
-                    <NavLink to="/gallery">
-                        Gallery
-                    </NavLink>
-
-                    <NavLink to="/merch">
-                        Merchandise
-                    </NavLink>
-
-                    <NavLink to="/murals">
-                        Murals
-                    </NavLink>
-
-                    <NavLink to="/contact">
-                        Contact Us
-                    </NavLink>
-
-                </NavMenu>
-            </Nav>
-        </>
+        <div class="topnav">
+            <a href="./pages/index.js">Home</a>
+            <a href="./pages/bookings.js">Book With Us</a>
+            <a href="./pages/gallery.js">Art Gallery</a>
+            <a href="./pages/merch.js">Merchandise</a>
+            <a href="./pages/murals.js"> Get a Mural</a>
+            <a href="./pages/contact.js">Contact Us</a>
+        </div>
     ); 
     
 }; 
