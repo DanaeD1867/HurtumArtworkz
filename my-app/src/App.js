@@ -1,15 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from "./components/Navbar/index.js"; 
-import Home from "./pages"; 
-import Contact from "./pages/contact";
-import Bookings from "./pages/bookings"; 
-import Gallery from "./pages/gallery"; 
-import Mural from "./pages/murals";
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
+
 
 function App() {
+
   return (
-      <Navbar />
+    <div className="App">
+      <header className="App-header">
+        <Navbar />
+      </header>
+    </div>
   );
 }
 
